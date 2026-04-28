@@ -1,0 +1,6 @@
+component_changed,parameter_before,parameter_after,metric_before,metric_after,observation
+chunk_size,300,500,0.88,0.93,Larger chunks improved context coverage
+overlap,50,80,0.90,0.93,Higher overlap reduced information loss
+chunking_strategy,fixed,sentence,0.89,0.93,Sentence chunking preserved semantic meaning
+top_k,3,5,0.85,0.93,Retrieving more chunks improved recall
+query_formulation,short,detailed,0.90,0.93,More descriptive queries improved retrieval

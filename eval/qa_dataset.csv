@@ -1,0 +1,31 @@
+question,expected_source,ground_truth
+What is the Transformer model?,NIPS-2017-attention-is-all-you-need-Paper.pdf,The Transformer is a neural network architecture based entirely on attention mechanisms.
+What is self-attention?,NIPS-2017-attention-is-all-you-need-Paper.pdf,Self-attention relates different positions of a single sequence to compute a representation.
+What is multi-head attention?,NIPS-2017-attention-is-all-you-need-Paper.pdf,Multi-head attention allows the model to jointly attend to information from different representation subspaces.
+Why does Transformer use positional encoding?,NIPS-2017-attention-is-all-you-need-Paper.pdf,Positional encoding gives the model information about token order because the Transformer has no recurrence or convolution.
+What is scaled dot-product attention?,NIPS-2017-attention-is-all-you-need-Paper.pdf,Scaled dot-product attention computes attention using queries keys and values with scaling by the square root of key dimension.
+What are queries keys and values in attention?,NIPS-2017-attention-is-all-you-need-Paper.pdf,Attention maps queries and key-value pairs to an output.
+What is encoder-decoder attention?,NIPS-2017-attention-is-all-you-need-Paper.pdf,Encoder-decoder attention uses queries from the decoder and keys and values from the encoder output.
+Why is attention useful in sequence transduction?,NIPS-2017-attention-is-all-you-need-Paper.pdf,Attention helps model dependencies between input and output tokens without recurrence.
+What is the main idea of Attention Is All You Need?,NIPS-2017-attention-is-all-you-need-Paper.pdf,The paper proposes the Transformer architecture based entirely on attention.
+What is BERT?,1810.04805v2.pdf,BERT is a bidirectional Transformer model pre-trained for language understanding.
+What does BERT stand for?,1810.04805v2.pdf,BERT stands for Bidirectional Encoder Representations from Transformers.
+What is masked language modeling?,1810.04805v2.pdf,Masked language modeling trains the model to predict masked tokens using surrounding context.
+What is next sentence prediction?,1810.04805v2.pdf,Next sentence prediction trains BERT to understand relationships between sentence pairs.
+Why is BERT bidirectional?,1810.04805v2.pdf,BERT uses both left and right context in all layers.
+Why is BERT useful for retrieval?,1810.04805v2.pdf,BERT-style models produce rich contextual representations useful for understanding text.
+What is fine-tuning in BERT?,1810.04805v2.pdf,Fine-tuning adapts the pre-trained BERT model to downstream NLP tasks.
+What tasks can BERT be used for?,1810.04805v2.pdf,BERT can be used for question answering natural language inference and other understanding tasks.
+What is the main contribution of BERT?,1810.04805v2.pdf,BERT introduces deep bidirectional pre-training for language understanding.
+What are scaling laws?,2001.08361v1.pdf,Scaling laws describe predictable relationships between model performance model size dataset size and compute.
+What is model size in scaling laws?,2001.08361v1.pdf,Model size refers to the number of parameters in a neural language model.
+What is dataset size in scaling laws?,2001.08361v1.pdf,Dataset size refers to the amount of training data used for training the model.
+What is compute in scaling laws?,2001.08361v1.pdf,Compute refers to computational resources used during model training.
+Why are scaling laws important?,2001.08361v1.pdf,Scaling laws help predict how performance improves as model size data and compute increase.
+What does overfitting mean in scaling laws?,2001.08361v1.pdf,Overfitting happens when a model memorizes training data instead of generalizing.
+How does dataset size affect model performance?,2001.08361v1.pdf,Larger datasets can improve performance and reduce overfitting for larger models.
+How does model size affect loss?,2001.08361v1.pdf,Increasing model size often reduces loss following a power-law trend.
+What is compute-optimal training?,2001.08361v1.pdf,Compute-optimal training balances model size and dataset size for a fixed compute budget.
+Why do larger models need more data?,2001.08361v1.pdf,Larger models have more capacity and require more data to avoid overfitting.
+What is retrieval augmented generation?,NIPS-2017-attention-is-all-you-need-Paper.pdf,RAG retrieves relevant context and uses it to generate grounded answers.
+Why are embeddings used in RAG?,1810.04805v2.pdf,Embeddings represent text semantically so similar meanings can be retrieved.
