@@ -51,7 +51,7 @@ dl2-chatbot/
 ### 1. Clone repository
 
 ```
-git clone <your-repo-link>
+git clone https://github.com/aalinalk-beep/dl-project-2.git
 cd dl2-chatbot
 ```
 
