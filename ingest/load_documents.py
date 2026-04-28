@@ -40,6 +40,20 @@ def load_docx(file_path):
         }
     }
 
+def load_txt(file_path):
+    with open(file_path, "r", encoding="utf-8") as file:
+        text = file.read()
+
+    filename = os.path.basename(file_path)
+
+    return {
+        "text": text,
+        "metadata": {
+            "source": filename,
+            "title": os.path.splitext(filename)[0],
+            "date": "unknown"
+        }
+    }
 
 def load_documents(data_folder):
     documents = []
@@ -52,9 +66,10 @@ def load_documents(data_folder):
 
         elif file.endswith(".docx"):
             documents.append(load_docx(file_path))
+        elif file.endswith(".txt"):
+            documents.append(load_txt(file_path))
 
     return documents
-
 
 if __name__ == "__main__":
     docs = load_documents("data")
